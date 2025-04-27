@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rabia's Movie Theater</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      
+  <header>
+    <h1>Rabia's Movie Theater 🍿</h1>
+    <div class="banner">
+      <div class="scrolling-text">
+        🍿 Enjoy the Show 🎬 | Lights. Camera. Action! 🎥 | Welcome to Rabia's Theater 🍿
+      </div>
+    </div>
+  </header>
+
+  <section class="screen">
+    <video controls>
+      <source src="media/WhatsApp Video 2025-04-27 at 7.51.23 PM.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <div class="controls">
+    <button class="btn" onclick="document.querySelector('video').currentTime = 0;">⏪ Play Again</button>
+    <button class="btn" onclick="alert('Thanks for watching! ⭐')">⭐ Rate Movie</button>
+    <a href="media/WhatsApp Video 2025-04-27 at 7.51.23 PM.mp4" download class="btn" onclick="showDownloadMessage()">⬇️ Download Video</a>
+  </div>
+
+  <script>
+    function showDownloadMessage() {
+      alert('📥 Download in Progress! Please check your downloads folder.');
+    }
+  </script>
+
+  <footer>
+    &copy; 2025 Rabia's Theater. All rights reserved.
+  </footer>
+</body>
+</html>
